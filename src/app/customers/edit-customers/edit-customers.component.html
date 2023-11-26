@@ -1,0 +1,31 @@
+<!-- app.component.html -->
+
+<div style="margin: 30px">
+    <h2>Update Customer</h2>
+  
+    <form [formGroup]="updateForm" (ngSubmit)="updateCustomer()">
+      <label for="userId">User ID:</label>
+      <input type="text" id="userId" formControlName="userId" disabled>
+  
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" formControlName="firstName">
+  
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" formControlName="lastName">
+  
+      <label for="emailAddress">Email Address:</label>
+      <input type="email" id="emailAddress" formControlName="emailAddress">
+  
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" formControlName="phoneNumber">
+  
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" formControlName="dob">
+  
+      <label for="department">Department:</label>
+      <input type="text" id="department" formControlName="department">
+  
+      <button type="submit" (click)="updateCustomer()">Update Customer</button>
+    </form>
+  </div>
+  

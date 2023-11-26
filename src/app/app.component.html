@@ -1,0 +1,11 @@
+<div class="container-fluid g-0 ">
+
+    <app-header (sideNavToggled)="sideNavStatus = $event;"></app-header>
+    <main>
+        <app-side-nav [sideNavStatus]="sideNavStatus" [ngClass]="{'app-nav-list-open': sideNavStatus}"></app-side-nav>
+        <div class="display-area p-3" [ngClass]="{'display-shrink': sideNavStatus}" >
+            <p class="fs-1 fa-bold fst-italic"> Loans Management </p>
+            <router-outlet></router-outlet>
+        </div>
+    </main>
+</div>

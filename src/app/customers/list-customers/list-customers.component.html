@@ -1,0 +1,57 @@
+<button routerLink="add">Add Customer</button>
+
+<div style="margin: 30px">
+  <input type="text" placeholder="Search by name or country" />
+  <h2>Regular HTML Table</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Actions</th>
+        <th>userId</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email Address</th>
+        <th>Phone Number</th>
+        <th>Date of Birth</th>
+        <th>Department</th>
+        <th>Address</th>
+        <th>Initial Deposit</th>
+        <th>Account Type</th>
+        <th>Account Number</th>
+        <th>Routing Number</th>
+        <th>Identification Type</th>
+        <th>Identification Number</th>
+        <th>Employment Status</th>
+        <th>Employer Name</th>
+        <th>Occupation</th>
+        <th>Annual Income</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers">
+        <td>
+          <button (click)="editCustomer(customer)">Edit</button>
+          <button (click)="deleteCustomer(customer._id)">Delete</button>
+        </td>
+        <td (click)="viewCustomerDetails(customer._id)">{{ customer._id }}</td>
+        <td>{{ customer.firstName }}</td>
+        <td>{{ customer.lastName }}</td>
+        <td>{{ customer.emailAddress }}</td>
+        <td>{{ customer.phoneNumber }}</td>
+        <td>{{ customer.dob }}</td>
+        <td>{{ customer.department }}</td>
+        <td>{{ customer.address }}</td>
+        <td>{{ customer.initial_deposit }}</td>
+        <td>{{ customer.accountType }}</td>
+        <td>{{ customer.accountNumber }}</td>
+        <td>{{ customer.routingNumber }}</td>
+        <td>{{ customer.identificationType }}</td>
+        <td>{{ customer.identificationNumber }}</td>
+        <td>{{ customer.employmentStatus }}</td>
+        <td>{{ customer.employerName }}</td>
+        <td>{{ customer.occupation }}</td>
+        <td>{{ customer.annualIncome }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

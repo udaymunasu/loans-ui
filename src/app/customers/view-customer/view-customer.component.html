@@ -1,0 +1,76 @@
+
+
+
+<div class="customer-details">
+  <h2>Customer Dashboard</h2>
+  <div class="customer-card">
+    <div class="customer-card-header">
+      <h3>{{ customer.firstName }} {{ customer.lastName }}</h3>
+      <span class="customer-id">Customer ID: {{ customer._id }}</span>
+    </div>
+    <div class="customer-card-body">
+      <div class="customer-info">
+        <div class="info-item">
+          <span class="info-label">Email Address:</span>
+          <span class="info-value">{{ customer.emailAddress }}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Phone Number:</span>
+          <span class="info-value">{{ customer.phoneNumber }}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Date of Birth:</span>
+          <span class="info-value">{{ customer.dob }}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Department:</span>
+          <span class="info-value">{{ customer.department }}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Address:</span>
+          <span class="info-value">{{ customer.address }}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Initial Deposit:</span>
+          <span class="info-value">$ {{ customer.initial_deposit }}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Account Type:</span>
+          <span class="info-value">{{ customer.accountType }}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Account Number:</span>
+          <span class="info-value">{{ customer.accountNumber }}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Routing Number:</span>
+          <span class="info-value">{{ customer.routingNumber }}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Identification Type:</span>
+          <span class="info-value">{{ customer.identificationType }}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Identification Number:</span>
+          <span class="info-value">{{ customer.identificationNumber }}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Employment Status:</span>
+          <span class="info-value">{{ customer.employmentStatus }}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Employer Name:</span>
+          <span class="info-value">{{ customer.employerName }}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Occupation:</span>
+          <span class="info-value">{{ customer.occupation }}</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Annual Income:</span>
+          <span class="info-value">$ {{ customer.annualIncome }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

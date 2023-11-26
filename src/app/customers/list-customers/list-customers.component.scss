@@ -1,0 +1,66 @@
+/* styles.scss */
+
+/* Container styling */
+div {
+    margin: 30px;
+    max-width: 100%;
+    /* Set maximum width to 100% of the viewport width */
+    overflow-x: auto;
+    /* Add horizontal scroll for smaller screens if necessary */
+}
+
+/* Input styling */
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    /* Make the input fill the container width */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 2px solid #3498db;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header styling */
+thead {
+    background-color: #3498db;
+    color: #fff;
+}
+
+th,
+td {
+    padding: 20px;
+    text-align: center;
+    /* Center align text */
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* Alternate row background color */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover effect on rows */
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: #3498db;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
